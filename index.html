@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LD Air Cargo Solutions – GSSA partner in Romania</title>
+<meta name="description" content="Air cargo sales and operational support for freight forwarders, from our cargo desk at Oradea Airport, Romania. GSSA services, charters, RFS and airport trucking.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#081c36; --navy2:#0d2a4f; --ink:#0a1f3a; --gold:#c49a5a; --gold2:#e2c48f; --paper:#f7f4ee; --white:#fff;
+  --mute:#5d6b80; --line:rgba(10,31,58,.12);
+  --disp:"Space Grotesk",system-ui,sans-serif; --body:"Manrope",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--disp);line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,3.1rem);margin:.4rem 0 1rem}
+.lead{font-size:1.12rem;color:var(--mute);max-width:620px}
+section{padding:110px 0;position:relative}
+
+/* ---------- header ---------- */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+header.solid{background:rgba(8,28,54,.92);backdrop-filter:blur(14px);box-shadow:0 10px 40px rgba(0,0,0,.25);padding:10px 0}
+.nav{display:flex;align-items:center;gap:28px}
+.nav .logo img{height:46px;width:auto;transition:height .35s}
+header.solid .logo img{height:38px}
+.nav ul{display:flex;gap:24px;list-style:none;margin-left:auto}
+.nav ul a{color:#dfe7f2;text-decoration:none;font-weight:600;font-size:.92rem;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--gold);transition:right .3s}
+.nav ul a:hover::after{right:0}
+.lang{display:flex;border:1px solid rgba(255,255,255,.25);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:#cfd9e6;font:600 .75rem var(--mono);padding:7px 11px;cursor:pointer;letter-spacing:.08em}
+.lang button.on{background:var(--gold);color:var(--navy)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;border-radius:999px;padding:14px 26px;border:0;cursor:pointer;font-family:var(--body);font-size:1rem;transition:transform .25s,box-shadow .25s,background .25s}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy);box-shadow:0 10px 30px rgba(196,154,90,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(196,154,90,.5)}
+.btn-ghost{color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.nav .btn{padding:10px 18px;font-size:.88rem}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh;padding:150px 0 90px;color:#fff;overflow:hidden;background:var(--navy);display:flex;align-items:center}
+.hero-bg{position:absolute;inset:-6%;background:url(img/apron-sunset.jpg) center/cover;animation:kb 26s ease-in-out infinite alternate;opacity:.55}
+@keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.12) translate(-2%,-2%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:
+  radial-gradient(1200px 600px at 85% 20%,rgba(196,154,90,.18),transparent 60%),
+  linear-gradient(100deg,rgba(8,28,54,.97) 0%,rgba(8,28,54,.85) 45%,rgba(8,28,54,.35) 100%)}
+.hero .dots{position:absolute;inset:0;z-index:1;background-image:radial-gradient(rgba(226,196,143,.18) 1px,transparent 1.5px);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent,#000 60%,transparent)}
+.hero .wrap{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.2vw,5.4rem);font-weight:700;margin:18px 0 22px}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(40px) rotate(3deg);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .gold{background:linear-gradient(90deg,var(--gold2),var(--gold),var(--gold2));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards,shine 6s linear infinite}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:200% 0}}
+.hero p.sub{font-size:1.2rem;color:#c9d4e3;max-width:560px;opacity:0;animation:up 1s .7s forwards}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;opacity:0;animation:up 1s .9s forwards}
+.hero .tag{margin-top:40px;font-family:var(--mono);font-size:.82rem;color:var(--gold2);letter-spacing:.08em;opacity:0;animation:up 1s 1.1s forwards}
+.flight{position:absolute;inset:0;z-index:2;pointer-events:none}
+.flight path{fill:none;stroke:rgba(226,196,143,.55);stroke-width:1.4;stroke-dasharray:5 9;animation:dash 30s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-600}}
+
+/* departure board */
+.board{background:rgba(5,16,32,.82);border:1px solid rgba(226,196,143,.25);border-radius:18px;padding:22px;backdrop-filter:blur(8px);box-shadow:0 30px 80px rgba(0,0,0,.45);opacity:0;animation:up 1s 1s forwards}
+.board .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;color:var(--gold2)}
+.board .clock{color:#fff}
+.row{display:grid;grid-template-columns:1.6fr .7fr 1fr;gap:8px;padding:9px 0;border-top:1px solid rgba(255,255,255,.07);font-family:var(--mono);font-size:.86rem;align-items:center}
+.row.h{border:0;color:#7f8ea5;font-size:.68rem;letter-spacing:.14em;padding-top:0}
+.flap{display:inline-flex;gap:2px}
+.flap span{display:inline-block;min-width:.72em;text-align:center;background:#0f2442;border-radius:3px;padding:1px 1px;color:#f3e6cc}
+.st{font-size:.72rem;letter-spacing:.1em}
+.st.ok{color:#5fd39a}.st.q{color:var(--gold2)}.st.r{color:#8fc1ff}
+.board .live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#5fd39a;margin-right:8px;box-shadow:0 0 0 0 rgba(95,211,154,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(95,211,154,0)}100%{box-shadow:0 0 0 0 rgba(95,211,154,0)}}
+.scroll-cue{position:absolute;left:50%;bottom:26px;z-index:3;width:26px;height:42px;border:2px solid rgba(255,255,255,.4);border-radius:14px;transform:translateX(-50%)}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--gold2);animation:cue 1.8s infinite}
+@keyframes cue{to{transform:translateY(14px);opacity:0}}
+
+/* marquee */
+.marquee{background:var(--navy2);color:var(--gold2);overflow:hidden;white-space:nowrap;border-block:1px solid rgba(226,196,143,.2)}
+.marquee .track{display:inline-flex;gap:48px;padding:16px 0;animation:mq 40s linear infinite;font-family:var(--mono);letter-spacing:.2em;font-size:.9rem}
+.marquee .track span::before{content:"✈";margin-right:14px;color:#fff;opacity:.6}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px}
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 30px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;overflow:hidden;transform-style:preserve-3d}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),rgba(196,154,90,.16),transparent 45%);opacity:0;transition:opacity .3s}
+.card:hover{box-shadow:0 26px 60px rgba(8,28,54,.14)}
+.card:hover::before{opacity:1}
+.card .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);margin-bottom:22px}
+.card .ic svg{width:26px;height:26px}
+.card h3{font-size:1.28rem;margin-bottom:10px}
+.card p{color:var(--mute)}
+.note{margin-top:26px;font-size:.86rem;color:var(--mute)}
+
+/* dark sections */
+.dark{background:var(--navy);color:#fff}
+.dark .lead,.dark .card p{color:#b7c4d6}
+.dark .card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.09);backdrop-filter:blur(6px)}
+.dark .card .ic{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy)}
+.glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(196,154,90,.16),transparent 65%);pointer-events:none}
+
+/* network */
+.net{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.codes{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.codes span{font:600 1.05rem var(--mono);letter-spacing:.1em;padding:10px 16px;border-radius:12px;border:1px solid rgba(196,154,90,.45);color:var(--gold);background:rgba(196,154,90,.06)}
+.map{width:100%;height:auto;background:var(--navy);border-radius:24px;box-shadow:0 30px 80px rgba(8,28,54,.25)}
+.map .road{fill:none;stroke:var(--gold2);stroke-width:2;stroke-dasharray:6 7;opacity:.85;animation:dash 18s linear infinite}
+.map .air{fill:none;stroke:#8fc1ff;stroke-width:1.6;stroke-dasharray:1 7;stroke-linecap:round;opacity:.8;animation:dash 12s linear infinite reverse}
+.map .city circle.p{fill:var(--gold2)}
+.map .city circle.ring{fill:none;stroke:var(--gold2);opacity:0;transform-box:fill-box;transform-origin:center;animation:ring 3s infinite}
+@keyframes ring{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(4)}}
+.map text{font:600 13px var(--mono);fill:#e8edf5;letter-spacing:.08em}
+.map text.s{font:500 10px var(--mono);fill:#8ea0b8}
+.map .home circle.p{fill:#fff}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:50px;position:relative}
+.steps::before{content:"";position:absolute;top:34px;left:6%;right:6%;height:2px;background:linear-gradient(90deg,var(--gold),rgba(196,154,90,.1));transform-origin:left;transform:scaleX(var(--p,0));transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.step{position:relative;text-align:left}
+.step .n{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--gold);font:700 1.2rem var(--disp);color:var(--navy);position:relative;z-index:1;margin-bottom:20px;box-shadow:0 10px 30px rgba(196,154,90,.25)}
+.step h3{font-size:1.12rem;margin-bottom:6px}
+.step p{color:var(--mute);font-size:.95rem}
+
+/* about */
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+.photo{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 40px 90px rgba(8,28,54,.3)}
+.photo img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s}
+.photo:hover img{transform:scale(1.05)}
+.photo .badge{position:absolute;left:18px;bottom:18px;background:rgba(8,28,54,.85);color:#fff;padding:12px 16px;border-radius:14px;backdrop-filter:blur(8px);font-size:.9rem}
+.photo .badge b{display:block;font-family:var(--disp);font-size:1.1rem}
+.skills{list-style:none;margin-top:24px;display:grid;gap:12px}
+.skills li{display:flex;gap:12px;align-items:flex-start}
+.skills li::before{content:"";flex:none;width:10px;height:10px;margin-top:8px;border-radius:3px;background:var(--gold);transform:rotate(45deg)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+form.rfq{background:#fff;color:var(--ink);border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+form.rfq label{display:flex;flex-direction:column;gap:6px;font-size:.82rem;font-weight:700;color:#3b4a60}
+form.rfq .full{grid-column:1/-1}
+form.rfq input,form.rfq textarea,form.rfq select{font:500 1rem var(--body);padding:12px 14px;border-radius:12px;border:1px solid #d6dce5;background:#fbfaf7;color:var(--ink);transition:border .2s,box-shadow .2s}
+form.rfq input:focus,form.rfq textarea:focus,form.rfq select:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px rgba(196,154,90,.18)}
+form.rfq textarea{min-height:90px;resize:vertical}
+.out{grid-column:1/-1;display:none;background:#f3efe6;border-radius:14px;padding:16px;font-size:.9rem}
+.out.show{display:block}
+.out pre{white-space:pre-wrap;font-family:var(--mono);font-size:.8rem;margin:10px 0}
+.cinfo{display:grid;gap:18px;align-content:start}
+.cbox{border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:24px;background:rgba(255,255,255,.04)}
+.cbox h3{font-size:1rem;color:var(--gold2);font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.cbox a{text-decoration:none}
+.cbox a:hover{color:var(--gold2)}
+footer{background:#050f1f;color:#8193ab;padding:40px 0;font-size:.86rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer img{height:40px;width:auto}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+@media (max-width:980px){
+  .hero .wrap,.net,.about,.contact{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}.steps::before{display:none}
+  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--navy);padding:20px 4vw;gap:16px}
+  .nav ul.open{display:flex}
+  .burger{display:block;margin-left:auto}
+  .nav .btn.hide-m{display:none}
+  section{padding:80px 0}
+}
+@media (max-width:980px){.scroll-cue{display:none}}
+@media (max-width:560px){form.rfq{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.lang button{padding:6px 8px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.hero h1 .w,.hero p.sub,.hero .ctas,.hero .tag,.board{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="LD Air Cargo Solutions"><img src="img/logo-white.png" alt="LD Air Cargo Solutions"></a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav ul').classList.toggle('open')">☰</button>
+    <ul>
+      <li><a href="#services" data-i="nav_services">Services</a></li>
+      <li><a href="#charter" data-i="nav_charter">Charter</a></li>
+      <li><a href="#network" data-i="nav_network">Network</a></li>
+      <li><a href="#process" data-i="nav_process">How we work</a></li>
+      <li><a href="#about" data-i="nav_about">About</a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-l="en">EN</button><button data-l="de">DE</button><button data-l="ro">RO</button>
+    </div>
+    <a class="btn btn-gold hide-m" href="#contact" data-i="cta_rfq">Send RFQ</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div><div class="dots"></div>
+  <svg class="flight" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path id="fp1" d="M-50,760 C380,520 760,560 1500,120"/>
+    <path id="fp2" d="M-50,880 C520,700 980,640 1500,380"/>
+    <g fill="#e2c48f"><path d="M0-6 L16 0 L0 6 L4 0 Z"><animateMotion dur="14s" repeatCount="indefinite" rotate="auto"><mpath href="#fp1"/></animateMotion></path></g>
+    <g fill="#ffffff" opacity=".7"><path d="M0-5 L13 0 L0 5 L3 0 Z"><animateMotion dur="19s" begin="4s" repeatCount="indefinite" rotate="auto"><mpath href="#fp2"/></animateMotion></path></g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" data-i="hero_eyebrow">GSSA · Air cargo · RFS · Charter</div>
+      <h1 id="h1"></h1>
+      <p class="sub" data-i="hero_sub">Air cargo sales and operational support for freight forwarders – from our cargo desk at Oradea Airport.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#contact"><span data-i="hero_btn1">Send your RFQ</span> →</a>
+        <a class="btn btn-ghost" href="#services" data-i="hero_btn2">Our services</a>
+      </div>
+      <div class="tag" data-i="tagline">Connecting Airports. Moving Cargo. Building Trust.</div>
+    </div>
+    <div class="board" aria-label="Cargo desk">
+      <div class="top"><span><i class="live"></i><span data-i="board_title">CARGO DESK · ORADEA (OMR)</span></span><span class="clock" id="clock">--:--</span></div>
+      <div class="row h"><span data-i="b_route">ROUTE</span><span data-i="b_mode">MODE</span><span data-i="b_status">STATUS</span></div>
+      <div id="rows"></div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mq"></div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="s_eyebrow">GSSA services</div><h2 data-i="s_title">Air export support for your desk</h2></div>
+    <div class="grid3">
+      <article class="card rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></div><h3 data-i="s1_t">Worldwide air freight solutions</h3><p data-i="s1_p"></p></article>
+      <article class="card rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3 data-i="s2_t">Quotations, booking and cargo desk</h3><p data-i="s2_p"></p></article>
+      <article class="card rv d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3 data-i="s3_t">Ad-hoc and urgent shipments</h3><p data-i="s3_p"></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CHARTER -->
+<section class="dark" id="charter">
+  <div class="glow" style="right:-200px;top:-200px"></div>
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="c_eyebrow">Charter &amp; capacity</div><h2 data-i="c_title">Capacity when you need it</h2></div>
+    <div class="grid3">
+      <article class="card rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div><h3 data-i="c1_t"></h3><p data-i="c1_p"></p></article>
+      <article class="card rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v13H3zM3 7l3-4h12l3 4M9 12h6"/></svg></div><h3 data-i="c2_t"></h3><p data-i="c2_p"></p></article>
+      <article class="card rv d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h5a3 3 0 0 0 0-6h-2a3 3 0 0 1 0-6h5"/></svg></div><h3 data-i="c3_t"></h3><p data-i="c3_p"></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL PRESENCE -->
+<section id="presence">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="p_eyebrow">Our local presence</div><h2 data-i="p_title">Oradea Airport Cargo Desk</h2></div>
+    <div class="grid3">
+      <article class="card rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h3 data-i="p1_t"></h3><p data-i="p1_p"></p></article>
+      <article class="card rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i="p2_t"></h3><p data-i="p2_p"></p></article>
+      <article class="card rv d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 16V7h11v9M14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h3 data-i="p3_t"></h3><p data-i="p3_p"></p></article>
+    </div>
+    <p class="note rv" data-i="p_note"></p>
+  </div>
+</section>
+
+<!-- NETWORK -->
+<section class="dark" id="network">
+  <div class="glow" style="left:-250px;bottom:-250px"></div>
+  <div class="wrap net">
+    <div class="rv">
+      <div class="eyebrow" data-i="n_eyebrow">Air + road</div>
+      <h2 data-i="n_title">Romanian origins. European gateways.</h2>
+      <p class="lead" data-i="n_p1"></p>
+      <div class="codes"><span>BUD</span><span>VIE</span><span>LNZ</span><span>MUC</span><span>FRA</span></div>
+      <p class="lead" data-i="n_p2"></p>
+      <p class="lead" style="margin-top:12px" data-i="n_p3"></p>
+    </div>
+    <div class="rv d2">
+      <svg class="map" viewBox="0 0 640 420" role="img" aria-label="Map: road connections from Romania to BUD, VIE, LNZ, MUC and FRA">
+        <defs><pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="rgba(226,196,143,.16)"/></pattern></defs>
+        <rect width="640" height="420" fill="url(#g)"/>
+        <g id="mapg"></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- B2B -->
+<section id="b2b">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="b_eyebrow">Neutral B2B cooperation</div><h2 data-i="b_title">Your customer relationship stays yours</h2></div>
+    <div class="grid3">
+      <article class="card rv d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><h3 data-i="b1_t"></h3><p data-i="b1_p"></p></article>
+      <article class="card rv d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div><h3 data-i="b2_t"></h3><p data-i="b2_p"></p></article>
+      <article class="card rv d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v11H8l-4 4z"/></svg></div><h3 data-i="b3_t"></h3><p data-i="b3_p"></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="background:#efe9de">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="r_eyebrow">From RFQ to coordination</div><h2 data-i="r_title">How we handle your export request</h2></div>
+    <div class="steps" id="steps">
+      <div class="step rv d1"><div class="n">01</div><h3 data-i="r1_t"></h3><p data-i="r1_p"></p></div>
+      <div class="step rv d2"><div class="n">02</div><h3 data-i="r2_t"></h3><p data-i="r2_p"></p></div>
+      <div class="step rv d3"><div class="n">03</div><h3 data-i="r3_t"></h3><p data-i="r3_p"></p></div>
+      <div class="step rv d3"><div class="n">04</div><h3 data-i="r4_t"></h3><p data-i="r4_p"></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <div class="photo rv"><img src="img/leonard.jpg" alt="Leonard Tirban on the apron next to a cargo aircraft" loading="lazy"><div class="badge"><b>Leonard Tirban</b><span data-i="a_role">Founder &amp; Managing Director</span></div></div>
+    <div class="rv d2">
+      <div class="eyebrow" data-i="a_eyebrow">Operational experience</div>
+      <h2 data-i="a_title">Operational experience behind your shipment</h2>
+      <p class="lead" data-i="a_p"></p>
+      <ul class="skills"><li data-i="a1"></li><li data-i="a2"></li><li data-i="a3"></li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="dark" id="contact">
+  <div class="glow" style="right:-260px;top:10%"></div>
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow" data-i="k_eyebrow">Let's work together</div><h2 data-i="k_title">Your next air export RFQ</h2><p class="lead" data-i="k_p"></p></div>
+    <div class="contact" style="margin-top:40px">
+      <form class="rfq rv" id="rfq" novalidate>
+        <label><span data-i="f_from">From (city / airport)</span><input name="origin" required placeholder="Oradea"></label>
+        <label><span data-i="f_to">To (city / airport)</span><input name="destination" required placeholder="SGN"></label>
+        <label><span data-i="f_mode">Mode</span><select name="mode"><option value="air" data-i="m_air">Air freight</option><option value="charter" data-i="m_charter">Charter</option><option value="road" data-i="m_road">Road / RFS</option></select></label>
+        <label><span data-i="f_ready">Cargo ready</span><input name="ready" type="date"></label>
+        <label><span data-i="f_pcs">Pieces</span><input name="pieces" inputmode="numeric" placeholder="2"></label>
+        <label><span data-i="f_weight">Total weight (kg)</span><input name="weight" inputmode="decimal" placeholder="300"></label>
+        <label class="full"><span data-i="f_dims">Dimensions (L × W × H cm)</span><input name="dims" placeholder="120 × 80 × 100"></label>
+        <label class="full"><span data-i="f_comm">Commodity / special cargo</span><input name="commodity"></label>
+        <label><span data-i="f_company">Company</span><input name="company" required></label>
+        <label><span data-i="f_email">Your email</span><input name="email" type="email" required></label>
+        <label class="full"><span data-i="f_notes">Notes</span><textarea name="notes"></textarea></label>
+        <div class="full"><button class="btn btn-gold" type="submit"><span data-i="f_send">Prepare RFQ email</span> →</button></div>
+        <div class="out" id="out"><b data-i="f_ready_msg">Your RFQ is ready.</b> <span data-i="f_ready_hint">Send it to office@ld-aircargo.com:</span><pre id="mailtxt"></pre><a class="btn btn-gold" id="mailto" href="#" style="padding:10px 18px;font-size:.9rem" data-i="f_open">Open in email</a> <button type="button" class="btn" id="copy" style="padding:10px 18px;font-size:.9rem;background:#e3dccd" data-i="f_copy">Copy text</button></div>
+      </form>
+      <div class="cinfo rv d2">
+        <div class="cbox"><h3 data-i="k_contact">Contact</h3><p><b>Leonard Tirban</b><br><span data-i="a_role2">Managing Director</span></p><p style="margin-top:8px"><a href="mailto:office@ld-aircargo.com">office@ld-aircargo.com</a><br><a href="mailto:l.tirban@ld-aircargo.com">l.tirban@ld-aircargo.com</a></p></div>
+        <div class="cbox"><h3 data-i="k_phone">Phone</h3><p><a href="tel:+40745909199">+40 745 909 199</a><br><a href="tel:+436602341183">+43 660 2341183</a></p></div>
+        <div class="cbox"><h3 data-i="k_office">Office</h3><p data-i="k_addr">Oradea International Airport (OMR), Romania</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><img src="img/logo-white.png" alt="LD Air Cargo Solutions"><span>© <span id="y"></span> LD AIR CARGO SOLUTIONS S.R.L. · <span data-i="f_foot">Oradea Airport, Romania</span></span></div></footer>
+
+<script>
+const T={
+en:{nav_services:"Services",nav_charter:"Charter",nav_network:"Network",nav_process:"How we work",nav_about:"About",cta_rfq:"Send RFQ",
+hero_eyebrow:"GSSA · Air cargo · RFS · Charter",h1:["Your","GSSA","partner","in","*Romania"],hero_sub:"Air cargo sales and operational support for freight forwarders – from our cargo desk at Oradea Airport.",hero_btn1:"Send your RFQ",hero_btn2:"Our services",tagline:"Connecting Airports. Moving Cargo. Building Trust.",
+board_title:"CARGO DESK · ORADEA (OMR)",b_route:"ROUTE",b_mode:"MODE",b_status:"STATUS",st_ready:"READY",st_quote:"QUOTING",st_req:"ON REQUEST",
+s_eyebrow:"GSSA services",s_title:"Air export support for your desk",
+s1_t:"Worldwide air freight solutions",s1_p:"Flight options and rate requests through our network of airlines and partners, tailored to your shipment.",
+s2_t:"Quotations, booking and cargo desk",s2_p:"Commercial follow-up, booking coordination subject to availability, documentation support and shipment updates.",
+s3_t:"Ad-hoc and urgent shipments",s3_p:"Support for time-critical exports and AOG requests. Airport-to-airport or door-to-door coordination as required.",
+c_eyebrow:"Charter & capacity",c_title:"Capacity when you need it",
+c1_t:"Full and part charters",c1_p:"Freighter and belly charter options sourced through our airline and broker network, for project cargo and peak volumes.",
+c2_t:"Capacity on demand",c2_p:"Ad-hoc space requests when scheduled flights are full or cut-off times are tight.",
+c3_t:"Aircraft, airport and road in one quote",c3_p:"Aircraft, airport handling and road positioning coordinated end to end, subject to availability.",
+p_eyebrow:"Our local presence",p_title:"Oradea Airport Cargo Desk",
+p1_t:"A local office. One point of coordination.",p1_p:"Our office at Oradea Airport supports forwarders with quotations, booking follow-up and cargo documentation.",
+p2_t:"Airport services through authorised operators",p2_p:"Coordination of cargo reception, screening, handling, storage and customs arrangements through relevant partners.",
+p3_t:"Road connections supporting the air shipment",p3_p:"Pickup, airport delivery and onward carriage coordinated around the selected flight and gateway.",
+p_note:"Airport services are subject to local availability, operator acceptance and cargo requirements.",
+n_eyebrow:"Air + road",n_title:"Romanian origins. European gateways.",n_p1:"Oradea, Arad, Timișoara and other origins, according to the shipment requirements.",
+n_p2:"Gateway selection based on flight options, cargo acceptance, cut-off times and the road connection.",n_p3:"RFS and airport trucking, with dedicated or express vehicles and FTL / LTL options where suitable.",
+b_eyebrow:"Neutral B2B cooperation",b_title:"Your customer relationship stays yours",
+b1_t:"Customer protection",b1_p:"We work with your forwarding team and do not approach your end customer.",
+b2_t:"White-label support",b2_p:"We can support your quotations and operations behind the scenes, with communication agreed with your team.",
+b3_t:"One commercial and operational contact",b3_p:"Flight and road coordination through one desk, with flexibility to select the gateway that fits the shipment.",
+r_eyebrow:"From RFQ to coordination",r_title:"How we handle your export request",
+r1_t:"Shipment brief",r1_p:"Origin, destination, weight, dimensions, commodity and ready date.",r2_t:"Route and quotation",r2_p:"We request rates and assess flight options and the road connection.",
+r3_t:"Booking coordination",r3_p:"After your approval, we coordinate booking subject to availability.",r4_t:"Operational follow-through",r4_p:"We coordinate collection, cargo handover and shipment updates.",
+a_eyebrow:"Operational experience",a_title:"Experience behind your shipment",a_role:"Founder & Managing Director",a_role2:"Managing Director",
+a_p:"Hands-on background on the apron and in the cargo office – so flight selection, documentation and the road leg fit together from the start.",
+a1:"Ground handling and cargo documentation",a2:"NOTOC, Manifest, AWB and ULD",a3:"Special cargo and RFS coordination",
+k_eyebrow:"Let's work together",k_title:"Your next air export RFQ",k_p:"Add LD Air Cargo Solutions to your request list. Send origin, destination, weight, dimensions, commodity and cargo-ready date.",
+k_contact:"Contact",k_phone:"Phone",k_office:"Office",k_addr:"Oradea International Airport (OMR), Romania",
+f_from:"From (city / airport)",f_to:"To (city / airport)",f_mode:"Mode",m_air:"Air freight",m_charter:"Charter",m_road:"Road / RFS",f_ready:"Cargo ready",f_pcs:"Pieces",f_weight:"Total weight (kg)",
+f_dims:"Dimensions (L × W × H cm)",f_comm:"Commodity / special cargo",f_company:"Company",f_email:"Your email",f_notes:"Notes",f_send:"Prepare RFQ email",
+f_ready_msg:"Your RFQ is ready.",f_ready_hint:"Send it to office@ld-aircargo.com:",f_open:"Open in email",f_copy:"Copy text",f_copied:"Copied",f_missing:"Please fill in from, to, company and email.",
+f_foot:"Oradea Airport, Romania",mail_subj:"RFQ",mail_hello:"Hello LD Air Cargo team,\n\nplease quote the following shipment:",mail_bye:"Best regards"},
+de:{nav_services:"Leistungen",nav_charter:"Charter",nav_network:"Netzwerk",nav_process:"Ablauf",nav_about:"Über uns",cta_rfq:"Anfrage senden",
+hero_eyebrow:"GSSA · Luftfracht · RFS · Charter",h1:["Ihr","GSSA-Partner","in","*Rumänien"],hero_sub:"Luftfracht-Vertrieb und operative Unterstützung für Speditionen – von unserem Cargo-Desk am Flughafen Oradea.",hero_btn1:"Anfrage senden",hero_btn2:"Unsere Leistungen",tagline:"Flughäfen verbinden. Fracht bewegen. Vertrauen aufbauen.",
+board_title:"CARGO-DESK · ORADEA (OMR)",b_route:"STRECKE",b_mode:"ART",b_status:"STATUS",st_ready:"BEREIT",st_quote:"ANGEBOT",st_req:"AUF ANFRAGE",
+s_eyebrow:"GSSA-Leistungen",s_title:"Luftfracht-Export für Ihr Team",
+s1_t:"Weltweite Luftfrachtlösungen",s1_p:"Flugoptionen und Ratenanfragen über unser Netzwerk aus Airlines und Partnern, passend zu Ihrer Sendung.",
+s2_t:"Angebote, Buchung und Cargo-Desk",s2_p:"Kommerzielle Betreuung, Buchungskoordination je nach Verfügbarkeit, Unterstützung bei Dokumenten und Sendungsupdates.",
+s3_t:"Ad-hoc- und Eilsendungen",s3_p:"Unterstützung bei zeitkritischen Exporten und AOG-Anfragen. Flughafen-zu-Flughafen oder Haus-zu-Haus, je nach Bedarf.",
+c_eyebrow:"Charter & Kapazität",c_title:"Kapazität, wenn Sie sie brauchen",
+c1_t:"Voll- und Teilcharter",c1_p:"Frachter- und Belly-Charter über unser Airline- und Broker-Netzwerk, für Projektladungen und Spitzenvolumen.",
+c2_t:"Kapazität auf Abruf",c2_p:"Ad-hoc-Frachtraum, wenn Linienflüge voll oder Annahmeschlusszeiten knapp sind.",
+c3_t:"Flugzeug, Flughafen und Straße in einem Angebot",c3_p:"Flugzeug, Abfertigung und Straßenzulauf durchgehend koordiniert, je nach Verfügbarkeit.",
+p_eyebrow:"Unsere Präsenz vor Ort",p_title:"Cargo-Desk am Flughafen Oradea",
+p1_t:"Ein Büro vor Ort. Ein Ansprechpartner.",p1_p:"Unser Büro am Flughafen Oradea unterstützt Speditionen bei Angeboten, Buchungsbetreuung und Frachtdokumenten.",
+p2_t:"Flughafenleistungen über zugelassene Partner",p2_p:"Koordination von Annahme, Kontrolle, Abfertigung, Lagerung und Zollabwicklung über die zuständigen Partner.",
+p3_t:"Straßenanbindung für Ihre Luftfracht",p3_p:"Abholung, Zustellung zum Flughafen und Weitertransport, abgestimmt auf Flug und Gateway.",
+p_note:"Flughafenleistungen vorbehaltlich lokaler Verfügbarkeit, Annahme durch den Betreiber und Anforderungen der Ware.",
+n_eyebrow:"Luft + Straße",n_title:"Ab Rumänien. Via Europas Hubs.",n_p1:"Oradea, Arad, Timișoara und weitere Abgangsorte, je nach Anforderung der Sendung.",
+n_p2:"Gateway-Wahl nach Flugoptionen, Frachtannahme, Annahmeschluss und Straßenanbindung.",n_p3:"RFS und Flughafen-Trucking mit Exklusiv- oder Expressfahrzeugen sowie FTL / LTL, wo sinnvoll.",
+b_eyebrow:"Neutrale B2B-Zusammenarbeit",b_title:"Ihre Kunden bleiben Ihre Kunden",
+b1_t:"Kundenschutz",b1_p:"Wir arbeiten mit Ihrem Speditionsteam und sprechen Ihre Endkunden nicht an.",
+b2_t:"White-Label-Unterstützung",b2_p:"Wir unterstützen Ihre Angebote und Abwicklung im Hintergrund, mit Kommunikation nach Absprache mit Ihrem Team.",
+b3_t:"Ein Ansprechpartner für Vertrieb und Abwicklung",b3_p:"Flug- und Straßenkoordination aus einer Hand, mit dem passenden Gateway für jede Sendung.",
+r_eyebrow:"Von der Anfrage zur Abwicklung",r_title:"So bearbeiten wir Ihre Exportanfrage",
+r1_t:"Sendungsdaten",r1_p:"Abgang, Bestimmung, Gewicht, Maße, Ware und Bereitstellungsdatum.",r2_t:"Route und Angebot",r2_p:"Wir holen Raten ein und prüfen Flugoptionen und Straßenanbindung.",
+r3_t:"Buchungskoordination",r3_p:"Nach Ihrer Freigabe koordinieren wir die Buchung je nach Verfügbarkeit.",r4_t:"Operative Abwicklung",r4_p:"Wir koordinieren Abholung, Übergabe und Sendungsupdates.",
+a_eyebrow:"Operative Erfahrung",a_title:"Erfahrung hinter Ihrer Sendung",a_role:"Gründer & Geschäftsführer",a_role2:"Geschäftsführer",
+a_p:"Praxis auf dem Vorfeld und im Cargo-Büro – damit Flugauswahl, Dokumente und Straßenzulauf von Anfang an zusammenpassen.",
+a1:"Bodenabfertigung und Frachtdokumentation",a2:"NOTOC, Manifest, AWB und ULD",a3:"Sonderfracht und RFS-Koordination",
+k_eyebrow:"Lassen Sie uns zusammenarbeiten",k_title:"Ihre nächste Luftfrachtanfrage",k_p:"Nehmen Sie uns in Ihren Verteiler auf. Senden Sie Abgang, Bestimmung, Gewicht, Maße, Ware und Bereitstellungsdatum.",
+k_contact:"Kontakt",k_phone:"Telefon",k_office:"Büro",k_addr:"Internationaler Flughafen Oradea (OMR), Rumänien",
+f_from:"Von (Stadt / Flughafen)",f_to:"Nach (Stadt / Flughafen)",f_mode:"Verkehrsträger",m_air:"Luftfracht",m_charter:"Charter",m_road:"Straße / RFS",f_ready:"Ware bereit am",f_pcs:"Packstücke",f_weight:"Gesamtgewicht (kg)",
+f_dims:"Maße (L × B × H cm)",f_comm:"Ware / Sonderfracht",f_company:"Firma",f_email:"Ihre E-Mail",f_notes:"Hinweise",f_send:"Anfrage-E-Mail erstellen",
+f_ready_msg:"Ihre Anfrage ist fertig.",f_ready_hint:"Senden Sie sie an office@ld-aircargo.com:",f_open:"Im E-Mail-Programm öffnen",f_copy:"Text kopieren",f_copied:"Kopiert",f_missing:"Bitte Von, Nach, Firma und E-Mail ausfüllen.",
+f_foot:"Flughafen Oradea, Rumänien",mail_subj:"Anfrage",mail_hello:"Hallo LD Air Cargo Team,\n\nbitte um ein Angebot für folgende Sendung:",mail_bye:"Mit freundlichen Grüßen"},
+ro:{nav_services:"Servicii",nav_charter:"Charter",nav_network:"Rețea",nav_process:"Cum lucrăm",nav_about:"Despre",cta_rfq:"Trimite cererea",
+hero_eyebrow:"GSSA · Cargo aerian · RFS · Charter",h1:["Partenerul","tău","GSSA","în","*România"],hero_sub:"Vânzări cargo aerian și suport operațional pentru casele de expediții – din biroul nostru din Aeroportul Oradea.",hero_btn1:"Trimite cererea",hero_btn2:"Serviciile noastre",tagline:"Conectăm aeroporturi. Mișcăm marfă. Construim încredere.",
+board_title:"CARGO DESK · ORADEA (OMR)",b_route:"RUTĂ",b_mode:"MOD",b_status:"STARE",st_ready:"GATA",st_quote:"OFERTARE",st_req:"LA CERERE",
+s_eyebrow:"Servicii GSSA",s_title:"Suport la export aerian pentru echipa ta",
+s1_t:"Soluții de transport aerian în toată lumea",s1_p:"Opțiuni de zbor și cereri de tarif prin rețeaua noastră de companii aeriene și parteneri, adaptate transportului tău.",
+s2_t:"Oferte, rezervări și cargo desk",s2_p:"Urmărire comercială, coordonarea rezervării în funcție de disponibilitate, suport pentru documente și informări despre transport.",
+s3_t:"Transporturi ad-hoc și urgente",s3_p:"Suport pentru exporturi urgente și cereri AOG. Coordonare aeroport–aeroport sau door-to-door, după nevoie.",
+c_eyebrow:"Charter și capacitate",c_title:"Capacitate atunci când ai nevoie",
+c1_t:"Chartere complete și parțiale",c1_p:"Chartere cu avioane cargo sau în cala avioanelor de pasageri, prin rețeaua noastră de companii aeriene și brokeri, pentru proiecte și vârfuri de volum.",
+c2_t:"Capacitate la cerere",c2_p:"Spațiu ad-hoc când zborurile regulate sunt pline sau termenele de predare sunt strânse.",
+c3_t:"Avion, aeroport și transport rutier într-o singură ofertă",c3_p:"Avion, handling în aeroport și transport rutier coordonate cap-coadă, în funcție de disponibilitate.",
+p_eyebrow:"Prezența noastră locală",p_title:"Cargo desk în Aeroportul Oradea",
+p1_t:"Un birou local. Un singur punct de coordonare.",p1_p:"Biroul nostru din Aeroportul Oradea sprijină casele de expediții cu oferte, urmărirea rezervărilor și documentele de transport.",
+p2_t:"Servicii aeroportuare prin operatori autorizați",p2_p:"Coordonăm recepția mărfii, controlul de securitate, handlingul, depozitarea și formalitățile vamale prin partenerii autorizați.",
+p3_t:"Transport rutier în sprijinul transportului aerian",p3_p:"Preluare, livrare la aeroport și transport mai departe, coordonate după zborul și aeroportul ales.",
+p_note:"Serviciile aeroportuare depind de disponibilitatea locală, acceptul operatorului și cerințele mărfii.",
+n_eyebrow:"Aerian + rutier",n_title:"Din România, prin Europa.",n_p1:"Oradea, Arad, Timișoara și alte localități, în funcție de cerințele transportului.",
+n_p2:"Aeroportul de plecare se alege după zboruri, acceptarea mărfii, termenele de predare și legătura rutieră.",n_p3:"RFS și transport rutier spre aeroport, cu vehicule dedicate sau expres și variante FTL / LTL, unde e cazul.",
+b_eyebrow:"Colaborare B2B neutră",b_title:"Clienții tăi rămân ai tăi",
+b1_t:"Protecția clientului",b1_p:"Lucrăm cu echipa ta și nu abordăm clientul tău final.",
+b2_t:"Suport white-label",b2_p:"Te putem sprijini în spate la oferte și operațiuni, cu o comunicare stabilită împreună cu echipa ta.",
+b3_t:"Un singur contact comercial și operațional",b3_p:"Zbor și transport rutier coordonate dintr-un singur birou, cu aeroportul potrivit pentru fiecare transport.",
+r_eyebrow:"De la cerere la coordonare",r_title:"Cum lucrăm cererea ta de export",
+r1_t:"Datele transportului",r1_p:"Plecare, destinație, greutate, dimensiuni, marfă și data la care e gata.",r2_t:"Rută și ofertă",r2_p:"Cerem tarife și analizăm zborurile și legătura rutieră.",
+r3_t:"Coordonarea rezervării",r3_p:"După acordul tău, coordonăm rezervarea în funcție de disponibilitate.",r4_t:"Urmărire operațională",r4_p:"Coordonăm preluarea, predarea mărfii și te ținem la curent.",
+a_eyebrow:"Experiență operațională",a_title:"Experiență pentru fiecare transport",a_role:"Fondator și Director General",a_role2:"Director General",
+a_p:"Experiență directă pe platformă și în biroul cargo – ca alegerea zborului, documentele și transportul rutier să se potrivească de la început.",
+a1:"Handling la sol și documente cargo",a2:"NOTOC, Manifest, AWB și ULD",a3:"Mărfuri speciale și coordonare RFS",
+k_eyebrow:"Hai să lucrăm împreună",k_title:"Următoarea ta cerere de export aerian",k_p:"Adaugă-ne pe lista ta de furnizori. Trimite plecarea, destinația, greutatea, dimensiunile, marfa și data la care e gata.",
+k_contact:"Contact",k_phone:"Telefon",k_office:"Birou",k_addr:"Aeroportul Internațional Oradea (OMR), România",
+f_from:"De la (oraș / aeroport)",f_to:"Către (oraș / aeroport)",f_mode:"Mod",m_air:"Aerian",m_charter:"Charter",m_road:"Rutier / RFS",f_ready:"Marfa e gata la",f_pcs:"Colete",f_weight:"Greutate totală (kg)",
+f_dims:"Dimensiuni (L × l × h cm)",f_comm:"Marfă / mărfuri speciale",f_company:"Firmă",f_email:"Emailul tău",f_notes:"Observații",f_send:"Pregătește emailul de cerere",
+f_ready_msg:"Cererea e gata.",f_ready_hint:"Trimite-o pe office@ld-aircargo.com:",f_open:"Deschide în email",f_copy:"Copiază textul",f_copied:"Copiat",f_missing:"Completează De la, Către, Firmă și Email.",
+f_foot:"Aeroportul Oradea, România",mail_subj:"Cerere ofertă",mail_hello:"Bună ziua,\n\nvă rog o ofertă pentru următorul transport:",mail_bye:"Cu stimă"}
+};
+let L="en";
+function pick(){
+  const q=(location.hash||"").replace("#","");
+  if(["en","de","ro"].includes(q))return q;
+  try{const s=localStorage.getItem("ld-lang");if(s)return s}catch(e){}
+  const n=(navigator.language||"en").slice(0,2);return ["de","ro"].includes(n)?n:"en";
+}
+function setLang(l){
+  L=l;document.documentElement.lang=l;try{localStorage.setItem("ld-lang",l)}catch(e){}
+  document.querySelectorAll("[data-i]").forEach(el=>{const v=T[l][el.dataset.i];if(typeof v==="string")el.textContent=v});
+  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("on",b.dataset.l===l));
+  const h=document.getElementById("h1");h.innerHTML="";
+  T[l].h1.forEach((w,i)=>{const s=document.createElement("span");const g=w.startsWith("*");s.className="w"+(g?" gold":"");s.textContent=g?w.slice(1):w;s.style.animationDelay=(.12+i*.1)+"s";h.appendChild(s);h.append(" ")});
+  buildBoard();
+}
+document.querySelectorAll(".lang button").forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+
+/* departure board with split-flap effect */
+const ROUTES=[["OMR → BUD","RFS","st_ready","ok"],["OMR → VIE","RFS","st_ready","ok"],["OMR → MUC","RFS","st_ready","ok"],["OMR → FRA","AIR","st_quote","q"],["RO → WORLD","AIR","st_quote","q"],["CHARTER","AIR","st_req","r"]];
+const CH="ABCDEFGHIJKLMNOPQRSTUVWXYZ→-·";
+function flap(el,text,delay){
+  el.innerHTML="";const spans=[...text].map(c=>{const s=document.createElement("span");s.textContent=c===" "?" ":c;el.appendChild(s);return s});
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  spans.forEach((s,i)=>{const target=s.textContent;if(target===" ")return;let n=0;const max=6+Math.floor(Math.random()*8);
+    setTimeout(()=>{const t=setInterval(()=>{s.textContent=CH[Math.floor(Math.random()*CH.length)];if(++n>=max){clearInterval(t);s.textContent=target}},55)},delay+i*30)});
+}
+function buildBoard(){
+  const box=document.getElementById("rows");box.innerHTML="";
+  ROUTES.forEach((r,i)=>{const row=document.createElement("div");row.className="row";
+    const a=document.createElement("span");a.className="flap";const b=document.createElement("span");b.className="flap";
+    const c=document.createElement("span");c.className="st "+r[3];c.textContent=T[L][r[2]];
+    row.append(a,b,c);box.appendChild(row);flap(a,r[0],400+i*180);flap(b,r[1],600+i*180)});
+}
+setInterval(()=>{const rows=document.querySelectorAll("#rows .row");if(!rows.length)return;const i=Math.floor(Math.random()*rows.length);const r=ROUTES[i];flap(rows[i].children[0],r[0],0)},4200);
+function tick(){try{document.getElementById("clock").textContent=new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Bucharest"})+" OMR"}catch(e){}}
+tick();setInterval(tick,15000);
+
+/* marquee */
+(function(){const items=["OMR","BUD","VIE","LNZ","MUC","FRA","RFS","CHARTER","AOG","DOOR-TO-DOOR","AIRPORT-TO-AIRPORT","FTL / LTL"];
+const t=document.getElementById("mq");[...items,...items].forEach(x=>{const s=document.createElement("span");s.textContent=x;t.appendChild(s)})})();
+
+/* map */
+(function(){
+  const P=(lon,lat)=>[ 40+(lon-8)*40, 60+(50.6-lat)*68 ];
+  const C={OMR:[21.90,47.03,"Oradea"],ARAD:[21.31,46.18,"Arad"],TSR:[21.34,45.81,"Timișoara"],BUD:[19.26,47.43,"Budapest"],VIE:[16.57,48.11,"Wien"],LNZ:[14.19,48.23,"Linz"],MUC:[11.79,48.35,"München"],FRA:[8.57,50.03,"Frankfurt"]};
+  const g=document.getElementById("mapg");const NS="http://www.w3.org/2000/svg";let out="";
+  const xy=k=>P(C[k][0],C[k][1]);
+  ["BUD","VIE","LNZ","MUC","FRA"].forEach((k,i)=>{const [x1,y1]=xy("OMR"),[x2,y2]=xy(k);const mx=(x1+x2)/2,my=Math.min(y1,y2)-40-i*14;
+    out+=`<path class="road" d="M${x1},${y1} Q${mx},${my} ${x2},${y2}"/>`;
+    out+=`<path class="air" d="M${x2},${y2} Q${x2-60},${y2-150} ${x2-140+i*40},-20"/>`});
+  ["ARAD","TSR"].forEach(k=>{const [x1,y1]=xy(k),[x2,y2]=xy("OMR");out+=`<path class="road" style="opacity:.5" d="M${x1},${y1} L${x2},${y2}"/>`});
+  Object.entries(C).forEach(([k,v])=>{const [x,y]=P(v[0],v[1]);const home=k==="OMR";const small=k==="ARAD"||k==="TSR";
+    out+=`<g class="city ${home?"home":""}"><circle class="ring" cx="${x}" cy="${y}" r="${home?7:5}" style="animation-delay:${Math.random()*3}s"/><circle class="p" cx="${x}" cy="${y}" r="${home?6:small?3:4.5}"/>`+
+      (small?`<text class="s" x="${x+8}" y="${y+4}">${v[2]}</text>`:`<text x="${x+(home?10:-10)}" y="${y-12}" text-anchor="${home?"start":"end"}">${k}</text><text class="s" x="${x+(home?10:-10)}" y="${y+18}" text-anchor="${home?"start":"end"}">${v[2]}</text>`)+`</g>`});
+  out+=`<g transform="translate(24,396)"><path class="road" d="M0,0 h30"/><text class="s" x="38" y="4">ROAD / RFS</text><path class="air" d="M110,0 h30"/><text class="s" x="148" y="4">AIR</text></g>`;
+  g.innerHTML=out;
+})();
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const st=document.getElementById("steps");new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)st.style.setProperty("--p",1)}),{threshold:.4}).observe(st);
+
+/* header + parallax */
+const hd=document.getElementById("top");const bg=document.querySelector(".hero-bg");
+addEventListener("scroll",()=>{hd.classList.toggle("solid",scrollY>40);if(scrollY<innerHeight)bg.style.translate=`0 ${scrollY*.25}px`},{passive:true});
+
+/* card tilt + glow */
+document.querySelectorAll(".card").forEach(c=>{
+  c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    c.style.setProperty("--mx",x*100+"%");c.style.setProperty("--my",y*100+"%");
+    if(!matchMedia("(prefers-reduced-motion: reduce)").matches)c.style.transform=`perspective(900px) rotateX(${(.5-y)*6}deg) rotateY(${(x-.5)*8}deg) translateY(-4px)`});
+  c.addEventListener("pointerleave",()=>c.style.transform="")});
+document.querySelectorAll(".nav ul a").forEach(a=>a.onclick=()=>document.querySelector(".nav ul").classList.remove("open"));
+
+/* RFQ form -> email text */
+const f=document.getElementById("rfq");
+f.addEventListener("submit",e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));const t=T[L];
+  if(!d.origin||!d.destination||!d.company||!d.email){f.querySelector(".out").classList.add("show");document.getElementById("mailtxt").textContent=t.f_missing;return}
+  const lines=[[t.f_from,d.origin],[t.f_to,d.destination],[t.f_mode,f.mode.options[f.mode.selectedIndex].text],[t.f_ready,d.ready],[t.f_pcs,d.pieces],[t.f_weight,d.weight],[t.f_dims,d.dims],[t.f_comm,d.commodity],[t.f_notes,d.notes]].filter(x=>x[1]).map(x=>`${x[0]}: ${x[1]}`).join("\n");
+  const body=`${t.mail_hello}\n\n${lines}\n\n${t.mail_bye}\n${d.company}\n${d.email}`;const subj=`${t.mail_subj}: ${d.origin} → ${d.destination} (${d.company})`;
+  document.getElementById("mailtxt").textContent=`${subj}\n\n${body}`;
+  document.getElementById("mailto").href=`mailto:office@ld-aircargo.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+  document.getElementById("out").classList.add("show")});
+document.getElementById("copy").onclick=async e=>{try{await navigator.clipboard.writeText(document.getElementById("mailtxt").textContent);e.target.textContent=T[L].f_copied}catch(err){}};
+document.getElementById("y").textContent=new Date().getFullYear();
+setLang(pick());
+</script>
+</body>
+</html>

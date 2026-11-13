@@ -199,6 +199,9 @@ h2.ul::after{content:"";position:absolute;left:0;bottom:-10px;height:3px;width:1
 @keyframes breathe{50%{transform:scale(1.35);opacity:.6}}
 .map .tagbox{fill:rgba(8,28,54,.9);stroke:var(--gold);stroke-width:1}
 .map .tagtxt{font:700 10px var(--mono);fill:var(--gold2);letter-spacing:.12em}
+.map .dest{opacity:0;transform:translateY(6px);transition:opacity .8s,transform .8s}.map.on .dest{opacity:1;transform:none}
+.map .dest rect{fill:rgba(143,193,255,.12);stroke:rgba(143,193,255,.55);stroke-width:1}
+.map .dest text{font:700 9.5px var(--mono);fill:#cfe6ff;letter-spacing:.1em}
 .codes span.gw{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy);border-color:transparent;box-shadow:0 8px 24px rgba(196,154,90,.35)}
 @media (max-width:980px){.stats .wrap{grid-template-columns:1fr 1fr}}
 @media (max-width:980px){
@@ -324,8 +327,8 @@ h2.ul::after{content:"";position:absolute;left:0;bottom:-10px;height:3px;width:1
   <div class="glow" style="left:-250px;bottom:-250px"></div>
   <div class="wrap net">
     <div class="rv">
-      <div class="eyebrow" data-i="n_eyebrow">Air + road</div>
-      <h2 class="ul" data-i="n_title">Romanian origins. European gateways.</h2>
+      <div class="eyebrow" data-i="n_eyebrow">Air worldwide + road feeder</div>
+      <h2 class="ul" data-i="n_title">From Romania. To the whole world.</h2>
       <p class="lead" data-i="n_p1"></p>
       <p class="lead" data-i="n_p0"></p>
       <div class="codes"><span class="gw">OTP</span><span>BUD</span><span>VIE</span><span>LNZ</span><span>MUC</span><span>FRA</span><span>AMS</span><span>LHR</span><span>LGW</span><span>LIS</span></div>
@@ -333,7 +336,7 @@ h2.ul::after{content:"";position:absolute;left:0;bottom:-10px;height:3px;width:1
       <p class="lead" style="margin-top:12px" data-i="n_p3"></p>
     </div>
     <div class="rv d2">
-      <svg class="map" id="map" viewBox="0 0 720 520" role="img" aria-label="Map: OTP gateway and RFS road connections from Romania to BUD, VIE, LNZ, MUC, FRA, AMS, LHR, LGW and LIS">
+      <svg class="map" id="map" viewBox="0 0 720 520" role="img" aria-label="Map: air cargo from Romania to the whole world via OTP and the European hubs BUD, VIE, LNZ, MUC, FRA, AMS, LHR, LGW and LIS, with road feeder service">
         <defs><pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="rgba(226,196,143,.14)"/></pattern>
         <radialGradient id="gwg"><stop offset="0" stop-color="#e2c48f" stop-opacity=".55"/><stop offset="1" stop-color="#e2c48f" stop-opacity="0"/></radialGradient></defs>
         <rect width="720" height="520" fill="url(#g)"/>
@@ -432,7 +435,7 @@ p1_t:"A local office. One point of coordination.",p1_p:"Our office at Oradea Air
 p2_t:"Airport services through authorised operators",p2_p:"Coordination of cargo reception, screening, handling, storage and customs arrangements through relevant partners.",
 p3_t:"Road connections supporting the air shipment",p3_p:"Pickup, airport delivery and onward carriage coordinated around the selected flight and gateway.",
 p_note:"Airport services are subject to local availability, operator acceptance and cargo requirements.",
-n_eyebrow:"Air + road",n_p0:"Bucharest Otopeni (OTP) is Romania's main air cargo gateway – and our consolidation point ex Romania. From there and via our road feeder network, cargo reaches the big European hubs.",k1:"European gateways",k2:"Consol point ex Romania",k3:"Modes · air + road",k4:"Languages · DE · EN · RO",n_title:"Romanian origins. European gateways.",n_p1:"Oradea, Arad, Timișoara and other origins, according to the shipment requirements.",
+n_eyebrow:"Air worldwide + road feeder",n_p0:"Bucharest Otopeni (OTP) is Romania's main air cargo gateway – and our consolidation point ex Romania. From there and via our road feeder network, cargo reaches the big European hubs – and from there, flights to every continent.",k1:"European gateways",k2:"Consol point ex Romania",k3:"Modes · air + road",k4:"Languages · DE · EN · RO",n_title:"From Romania. To the whole world.",n_p1:"Oradea, Arad, Timișoara and other origins, according to the shipment requirements.",
 n_p2:"Gateway selection based on flight options, cargo acceptance, cut-off times and the road connection.",n_p3:"RFS and airport trucking, with dedicated or express vehicles and FTL / LTL options where suitable.",
 b_eyebrow:"Neutral B2B cooperation",b_title:"Your customer relationship stays yours",
 b1_t:"Customer protection",b1_p:"We work with your forwarding team and do not approach your end customer.",
@@ -466,7 +469,7 @@ p1_t:"Ein Büro vor Ort. Ein Ansprechpartner.",p1_p:"Unser Büro am Flughafen Or
 p2_t:"Flughafenleistungen über zugelassene Partner",p2_p:"Koordination von Annahme, Kontrolle, Abfertigung, Lagerung und Zollabwicklung über die zuständigen Partner.",
 p3_t:"Straßenanbindung für Ihre Luftfracht",p3_p:"Abholung, Zustellung zum Flughafen und Weitertransport, abgestimmt auf Flug und Gateway.",
 p_note:"Flughafenleistungen vorbehaltlich lokaler Verfügbarkeit, Annahme durch den Betreiber und Anforderungen der Ware.",
-n_eyebrow:"Luft + Straße",n_p0:"Bukarest Otopeni (OTP) ist Rumäniens Haupt-Gateway für Luftfracht – und unser Konsolidierungspunkt ab Rumänien. Von dort und über unser Road-Feeder-Netz erreicht die Fracht die großen europäischen Hubs.",k1:"Europäische Gateways",k2:"Consol-Punkt ab Rumänien",k3:"Verkehrsträger · Luft + Straße",k4:"Sprachen · DE · EN · RO",n_title:"Ab Rumänien. Via Europas Hubs.",n_p1:"Oradea, Arad, Timișoara und weitere Abgangsorte, je nach Anforderung der Sendung.",
+n_eyebrow:"Luftfracht weltweit + Road Feeder",n_p0:"Bukarest Otopeni (OTP) ist Rumäniens Haupt-Gateway für Luftfracht – und unser Konsolidierungspunkt ab Rumänien. Von dort und über unser Road-Feeder-Netz erreicht die Fracht die großen europäischen Hubs – und von dort Flüge auf alle Kontinente.",k1:"Europäische Gateways",k2:"Consol-Punkt ab Rumänien",k3:"Verkehrsträger · Luft + Straße",k4:"Sprachen · DE · EN · RO",n_title:"Ab Rumänien. In die ganze Welt.",n_p1:"Oradea, Arad, Timișoara und weitere Abgangsorte, je nach Anforderung der Sendung.",
 n_p2:"Gateway-Wahl nach Flugoptionen, Frachtannahme, Annahmeschluss und Straßenanbindung.",n_p3:"RFS und Flughafen-Trucking mit Exklusiv- oder Expressfahrzeugen sowie FTL / LTL, wo sinnvoll.",
 b_eyebrow:"Neutrale B2B-Zusammenarbeit",b_title:"Ihre Kunden bleiben Ihre Kunden",
 b1_t:"Kundenschutz",b1_p:"Wir arbeiten mit Ihrem Speditionsteam und sprechen Ihre Endkunden nicht an.",
@@ -500,7 +503,7 @@ p1_t:"Un birou local. Un singur punct de coordonare.",p1_p:"Biroul nostru din Ae
 p2_t:"Servicii aeroportuare prin operatori autorizați",p2_p:"Coordonăm recepția mărfii, controlul de securitate, handlingul, depozitarea și formalitățile vamale prin partenerii autorizați.",
 p3_t:"Transport rutier în sprijinul transportului aerian",p3_p:"Preluare, livrare la aeroport și transport mai departe, coordonate după zborul și aeroportul ales.",
 p_note:"Serviciile aeroportuare depind de disponibilitatea locală, acceptul operatorului și cerințele mărfii.",
-n_eyebrow:"Aerian + rutier",n_p0:"București Otopeni (OTP) este principalul gateway de cargo aerian al României – și punctul nostru de consolidare din România. De acolo și prin rețeaua noastră de road feeder, marfa ajunge la marile hub-uri europene.",k1:"Gateway-uri europene",k2:"Punct de consolidare din România",k3:"Moduri · aerian + rutier",k4:"Limbi · DE · EN · RO",n_title:"Din România, prin Europa.",n_p1:"Oradea, Arad, Timișoara și alte localități, în funcție de cerințele transportului.",
+n_eyebrow:"Aerian în toată lumea + rutier",n_p0:"București Otopeni (OTP) este principalul gateway de cargo aerian al României – și punctul nostru de consolidare din România. De acolo și prin rețeaua noastră de road feeder, marfa ajunge la marile hub-uri europene – iar de acolo, cu avionul, pe toate continentele.",k1:"Gateway-uri europene",k2:"Punct de consolidare din România",k3:"Moduri · aerian + rutier",k4:"Limbi · DE · EN · RO",n_title:"Din România, în toată lumea.",n_p1:"Oradea, Arad, Timișoara și alte localități, în funcție de cerințele transportului.",
 n_p2:"Aeroportul de plecare se alege după zboruri, acceptarea mărfii, termenele de predare și legătura rutieră.",n_p3:"RFS și transport rutier spre aeroport, cu vehicule dedicate sau expres și variante FTL / LTL, unde e cazul.",
 b_eyebrow:"Colaborare B2B neutră",b_title:"Clienții tăi rămân ai tăi",
 b1_t:"Protecția clientului",b1_p:"Lucrăm cu echipa ta și nu abordăm clientul tău final.",
@@ -557,7 +560,7 @@ function tick(){try{document.getElementById("clock").textContent=new Date().toLo
 tick();setInterval(tick,15000);
 
 /* marquee */
-(function(){const items=["OTP · CONSOL RO","OMR","BUD","VIE","LNZ","MUC","FRA","AMS","LHR","LGW","LIS","RFS","CHARTER","AOG","DOOR-TO-DOOR","AIRPORT-TO-AIRPORT","FTL / LTL"];
+(function(){const items=["RO → WORLDWIDE","OTP · CONSOL RO","OMR","BUD","VIE","LNZ","MUC","FRA","AMS","LHR","LGW","LIS","RFS","CHARTER","AOG","DOOR-TO-DOOR","AIRPORT-TO-AIRPORT","FTL / LTL"];
 const t=document.getElementById("mq");[...items,...items].forEach(x=>{const s=document.createElement("span");s.textContent=x;t.appendChild(s)})})();
 
 /* map */
@@ -566,12 +569,15 @@ const t=document.getElementById("mq");[...items,...items].forEach(x=>{const s=do
   const g=document.getElementById("mapg");let o="";const xy=k=>[C[k][0],C[k][1]];
   const curve=(a,b,lift)=>{const[x1,y1]=xy(a),[x2,y2]=xy(b);const mx=(x1+x2)/2,my=(y1+y2)/2-lift;return`M${x1},${y1} Q${mx},${my} ${x2},${y2}`};
   const roads=[["OMR","OTP",30],["OMR","BUD",22],["OMR","VIE",44],["OMR","LNZ",62],["OMR","MUC",80],["OMR","FRA",96],["OMR","AMS",120],["OMR","LHR",150],["OMR","LGW",120],["OMR","LIS",160]];
-  const air=[["OTP","M600,335 Q680,300 735,250"],["OTP","M600,335 Q700,380 735,430"],["FRA","M341,245 Q330,120 380,-10"],["AMS","M292,194 Q250,80 230,-10"],["LHR","M223,205 Q120,140 -10,120"],["LIS","M45,444 Q10,420 -10,380"]];
+  const air=[["OTP","M600,335 Q680,300 735,250"],["OTP","M600,335 Q700,380 735,430"],["OTP","M600,335 Q640,420 690,535"],["FRA","M341,245 Q330,120 380,-10"],["FRA","M341,245 Q520,150 735,120"],["AMS","M292,194 Q250,80 230,-10"],["LHR","M223,205 Q120,140 -10,120"],["LIS","M45,444 Q10,420 -10,380"],["LIS","M45,444 Q60,500 90,535"]];
+  const dest=[[712,222,"ASIA · FAR EAST","end"],[628,96,"CHINA · JAPAN · KOREA","end"],[700,412,"MIDDLE EAST · INDIA","end"],[650,505,"AFRICA","end"],[18,96,"AMERICAS","start"],[18,360,"LATAM","start"],[250,505,"AFRICA · S. AMERICA","start"],[246,22,"CANADA · USA","start"]];
   roads.forEach(([a,b,l],i)=>{const d=curve(a,b,l);
     o+=`<path class="draw r" pathLength="1" d="${d}" style="transition-delay:${.15*i}s"/><path class="road" id="rd${i}" d="${d}" style="transition-delay:${1.6+.15*i}s"/>`;
     o+=`<circle class="truck" r="${b==="OTP"?3.6:2.8}"><animateMotion dur="${6+i*1.3}s" begin="${i*.6}s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#rd${i}"/></animateMotion></circle>`});
   air.forEach(([k,d],i)=>{o+=`<path class="draw a" pathLength="1" d="${d}" style="transition-delay:${1.4+.2*i}s"/><path class="air" id="ar${i}" d="${d}" style="transition-delay:${2.6+.2*i}s"/>`;
     o+=`<path class="plane" d="M-7,-3 L7,0 L-7,3 L-4,0 Z"><animateMotion dur="${4+i*.7}s" begin="${2+i*.5}s" repeatCount="indefinite" rotate="auto"><mpath href="#ar${i}"/></animateMotion></path>`});
+  dest.forEach(([x,y,t,an],i)=>{const w=t.length*7.4+22;const bx=an==="end"?x-w:x;
+    o+=`<g class="dest" style="transition-delay:${3+.15*i}s"><rect x="${bx}" y="${y-13}" width="${w}" height="20" rx="10"/><text x="${bx+w/2}" y="${y+1}" text-anchor="middle">✈ ${t}</text></g>`});
   const lab={OMR:[12,14,"start"],OTP:[14,22,"start"],BUD:[2,22,"middle"],VIE:[-4,-14,"end"],LNZ:[0,22,"middle"],MUC:[-8,-12,"end"],FRA:[10,-10,"start"],AMS:[10,-10,"start"],LHR:[-10,-8,"end"],LGW:[-10,16,"end"],LIS:[12,4,"start"]};
   Object.entries(C).forEach(([k,v])=>{const[x,y,n]=v;const home=k==="OMR",gw=k==="OTP",small=k==="ARAD"||k==="TSR";
     o+=`<g class="city ${home?"home":""} ${gw?"gw":""}">`+(gw?`<circle class="halo" cx="${x}" cy="${y}" r="26"/>`:"")+`<circle class="ring" cx="${x}" cy="${y}" r="${gw?8:home?7:5}" style="animation-delay:${(Math.random()*3).toFixed(2)}s"/><circle class="p" cx="${x}" cy="${y}" r="${gw?7:home?6:small?2.6:4.2}"/>`;
